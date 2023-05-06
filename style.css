@@ -1,0 +1,345 @@
+@font-face {
+  font-family: "fontawsome";
+  src: url("/fonts/fontawesome-webfont.ttf");
+}
+@font-face {
+  font-family: "iransans";
+  src: url("/fonts/IRANSans_Medium.ttf");
+}
+@font-face {
+  font-family: "iransansregular";
+  src: url("fonts/IRANSansWeb.ttf");
+}
+
+/* css reset  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* end css reset  */
+
+
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+ul{
+    /*bootstrap give 20 px padding right */
+    padding-right: 0;
+}
+body{
+    font-family: "iransans";
+    font-size: 16px;
+}
+.header-site {
+    width: 100%;
+    height: 60px;
+    background: #010121;
+    color: #fff;
+  
+}
+.logo {
+    font: 1.3em sans-serif;
+    position: relative;
+    bottom: 5px;
+}
+.menu-icon , .search-icon {
+    font-size: 25px;
+    position: relative;
+    bottom: 4px;
+}
+
+.search-icon img {
+    width: 25px;
+}
+.menu {
+    width: 290px;
+    height: 100%;
+    background: #010121;
+  position:absolute;
+  right: -330px;
+  top :61px;
+}
+.active-menu {
+    right: 0px;
+}
+nav.menu ul li a {
+    color: #dbd8d8;
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #ffffffdf;
+    font-size: 14px;
+
+}
+/*nav.menu ul li a:first-child{ }*/
+
+ 
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 7px 0;
+
+  }
+
+  .change .bar1 {
+    transform: translate(0, 5px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -13px) rotate(45deg);
+  }
+.search {
+    width: 100%;
+    background: #010121;
+    border-top: 1px solid #ffffffdf;
+    padding: 2px;
+    display: none !important;
+    z-index: 1;
+    position: relative;
+}
+  .search-input {
+    width: 86%;
+    margin-right: 2px;
+    padding: 3px;
+  }
+  .search-input > input {
+
+    border-radius : 4px;
+   border:0;
+ display: block;
+ width: 100%;
+ height: 40px;
+    font-size: 12px;
+    background: #fdfdfd;
+    padding-right: 10px !important;
+
+  }
+  .search button {
+    font-size: 12px;
+    margin-right: 12px !important;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+.search button img {
+  width: 19.5px;
+
+}
+
+.active-search {
+  display: flex !important;
+}
+
+/* example classes */
+
+/* you can remoe all */
+
+.sliders {
+display:flex;
+}
+.sliders .slider {
+width: 23%;
+background: #fff;
+margin: 10px;
+box-shadow: 0 0 10px 1px #dfe0e0;
+border-bottom: 3px solid #e2e2e2;
+height: 100px;
+text-align: center;
+}
+.top-posts {
+	display:flex;
+}
+.top-posts .top-post {
+  width: 23%;
+background: #fff;
+margin: 10px;
+box-shadow: 0 0 10px 1px #dfe0e0;
+border-bottom: 3px solid #e2e2e2;
+height: 100px;
+text-align: center;
+
+}
+article.post {
+  margin-top: 10px;
+  box-shadow: 0 0 10px 1px #dfe0e0;
+  border-bottom: 3px solid #e2e2e2;
+  background-color: #fff;
+  height: 200px;
+  text-align: center;
+}
+.sidebars {
+  margin-top: 10px;
+}
+aside.sidebar {
+  box-shadow: 0 0 10px 1px #dfe0e0;
+    border-bottom: 3px solid #e2e2e2;
+    margin-bottom: 20px;
+    background: #fff;
+    height: 200px;
+    text-align: center;
+}
+
+/*  comment section */
+.comments {
+  margin-top: 15px;
+  box-shadow: 0 0 10px 1px #dfe0e0;
+  border-bottom: 3px solid #e2e2e2;
+  background: #fff;
+  padding-bottom: 20px;
+  
+}
+.comments > p {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 24px 20px !important;
+  font-family: iransans;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 15px;
+}
+.comments p i {
+  float: left;
+  font-size: 30px;
+  opacity: .1;
+  position: relative;
+  bottom: 5px;
+}
+.comments .username p ,.comments .email p ,.comments .comment p {
+  padding: 5px 20px 3px 0;
+  color: #000c;
+  font-size: 13px;
+  }
+
+.comments .username input , .comments .email input , .comments .comment textarea{
+  border: 1px solid #0000000f;
+  border-radius: 15px;
+  margin: 10px;
+  width: 95%;
+  padding: 13px;
+  font-size: 11px;
+  font-family: 'iransansregular';
+}
+.comment{
+  margin-top: 10px;
+}
+.comment textarea{
+  height: 170px;
+  margin-top: 0px;
+}
+.comments .username input::placeholder,
+.comments .email input::placeholder,
+.comments .comment textarea::placeholder{
+  color:#00000071
+}
+.comments .username input:focus,
+.comments .email input:focus,
+.comments .comment textarea:focus{
+outline: 1px solid #00000008;
+}
+
+
+
+
+.user-comment ,.user-comment-reply {
+  box-shadow: 0 0 10px 1px #dfe0e0;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.user-comment .comment-author span
+,.user-comment-reply .comment-author span {
+  float: left;
+  font-family: 'iransansregular';
+  color: #0000009e;
+}
+.comment-author {
+  font-size: 12px;
+  padding: 18px;
+  border-bottom: 1px solid #f0f0f0cf;
+  color: #000000cc;
+}
+.comment-type{
+  font-size: 12px;
+  padding: 5px 0;
+  line-height: 2;
+  margin: 0 10px;
+  min-height: 40px;
+  color: #000000cc;
+  font-family: 'iransansregular';
+}
+
+.reply-comment{
+  font-size: 12px;
+  font-family: "iransansregular";
+
+}
+.reply-comment a {
+  color: #000000cc;
+}
+.user-comment-reply{
+width: 81%;
+margin-top: 6px !important;
+}
+
+/* end comment section */
+
+
+
+/* end example classes */
+@media (min-width: 992px) { 
+  .lg-right{
+    margin-right: 12.499999995%;
+  }
+}
+
